@@ -1,0 +1,1054 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Qupa_Urdf">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.020918 0.051041 -0.027702"
+        rpy="0 0 0" />
+      <mass
+        value="0.12302" />
+      <inertia
+        ixx="0.00017936"
+        ixy="-1.4669E-06"
+        ixz="-1.7912E-10"
+        iyy="0.00033772"
+        iyz="-5.2388E-09"
+        izz="0.00019378" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Qupa_Urdf/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+           rgba="0.019608 0.019608 0.019608 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Qupa_Urdf/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="Color_Sensor">
+    <inertial>
+      <origin
+        xyz="-5.7803E-05 0.0048279 -9.8775E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.0034683" />
+      <inertia
+        ixx="2.4565E-07"
+        ixy="9.4669E-10"
+        ixz="-3.3359E-11"
+        iyy="4.031E-07"
+        iyz="-7.7399E-12"
+        izz="2.2473E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Qupa_Urdf/meshes/Color_Sensor.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Qupa_Urdf/meshes/Color_Sensor.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Color_Sensor_joint"
+    type="fixed">
+    <origin
+      xyz="-0.050645 0.027655 0.044319"
+      rpy="-1.5708 0 -3.1369" />
+    <parent
+      link="base_link" />
+    <child
+      link="Color_Sensor" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="RL_1">
+    <inertial>
+      <origin
+        xyz="-2.0071E-10 -0.0041189 0.00673"
+        rpy="0 0 0" />
+      <mass
+        value="0.00084984" />
+      <inertia
+        ixx="1.3667E-08"
+        ixy="-2.014E-16"
+        ixz="-4.8576E-15"
+        iyy="1.653E-08"
+        iyz="1.2392E-17"
+        izz="1.3954E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Qupa_Urdf/meshes/RL_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.74902 0.74902 0.74902 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Qupa_Urdf/meshes/RL_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RL_1_joint"
+    type="fixed">
+    <origin
+      xyz="-0.041789 0.052703 0.035829"
+      rpy="1.5708 0 -1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="RL_1" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="RL_2">
+    <inertial>
+      <origin
+        xyz="-2.0071E-10 -0.0041189 0.00673"
+        rpy="0 0 0" />
+      <mass
+        value="0.00084984" />
+      <inertia
+        ixx="1.3667E-08"
+        ixy="-2.014E-16"
+        ixz="-4.8576E-15"
+        iyy="1.653E-08"
+        iyz="1.2392E-17"
+        izz="1.3954E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Qupa_Urdf/meshes/RL_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.74902 0.74902 0.74902 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Qupa_Urdf/meshes/RL_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RL_2_joint"
+    type="fixed">
+    <origin
+      xyz="-0.041789 0.0027029 0.035829"
+      rpy="1.5708 0 -1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="RL_2" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="RL_3">
+    <inertial>
+      <origin
+        xyz="-2.0071E-10 0.0041189 -0.00673"
+        rpy="0 0 0" />
+      <mass
+        value="0.00084984" />
+      <inertia
+        ixx="1.3667E-08"
+        ixy="2.014E-16"
+        ixz="4.8576E-15"
+        iyy="1.653E-08"
+        iyz="1.2392E-17"
+        izz="1.3954E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Qupa_Urdf/meshes/RL_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.74902 0.74902 0.74902 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Qupa_Urdf/meshes/RL_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RL_3_joint"
+    type="fixed">
+    <origin
+      xyz="0.017211 0.020973 0.035329"
+      rpy="-1.5708 0 3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="RL_3" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="IR_0">
+    <inertial>
+      <origin
+        xyz="-0.0014193 0.00225 -0.0022301"
+        rpy="0 0 0" />
+      <mass
+        value="0.00047513" />
+      <inertia
+        ixx="5.3394E-09"
+        ixy="2.0508E-24"
+        ixz="-3.4351E-10"
+        iyy="8.8346E-09"
+        iyz="6.6442E-25"
+        izz="1.2067E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Qupa_Urdf/meshes/IR_0.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Qupa_Urdf/meshes/IR_0.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="IR_0_joint"
+    type="fixed">
+    <origin
+      xyz="-0.024689 0.085503 0.052379"
+      rpy="1.5708 0 3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="IR_0" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="IR_45">
+    <inertial>
+      <origin
+        xyz="-0.0014193 0.00225 -0.0022301"
+        rpy="0 0 0" />
+      <mass
+        value="0.00047513" />
+      <inertia
+        ixx="5.3394E-09"
+        ixy="2.8436E-24"
+        ixz="-3.4351E-10"
+        iyy="8.8346E-09"
+        iyz="1.7029E-24"
+        izz="1.2067E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Qupa_Urdf/meshes/IR_45.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Qupa_Urdf/meshes/IR_45.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="IR_45_joint"
+    type="fixed">
+    <origin
+      xyz="-0.0622460269406338 0.0699878733603929 0.0523787499564868"
+      rpy="1.5707963267949 0 -2.35619449019234" />
+    <parent
+      link="base_link" />
+    <child
+      link="IR_45" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="IR_90">
+    <inertial>
+      <origin
+        xyz="-0.001419256791114 0.00225 -0.0022301238932468"
+        rpy="0 0 0" />
+      <mass
+        value="0.000475132833058845" />
+      <inertia
+        ixx="5.3393782329221E-09"
+        ixy="6.8445870169362E-25"
+        ixz="-3.4350501438547E-10"
+        iyy="8.83460540269746E-09"
+        iyz="6.44354146855583E-25"
+        izz="1.20670026416874E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Qupa_Urdf/meshes/IR_90.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Qupa_Urdf/meshes/IR_90.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="IR_90_joint"
+    type="fixed">
+    <origin
+      xyz="-0.0803894685504242 0.0258028878454376 0.0523787499564868"
+      rpy="1.5707963267949 0 -1.5707963267949" />
+    <parent
+      link="base_link" />
+    <child
+      link="IR_90" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="IR_135">
+    <inertial>
+      <origin
+        xyz="-0.00141925679111417 0.00225 -0.0022301238932467"
+        rpy="0 0 0" />
+      <mass
+        value="0.000475132833058846" />
+      <inertia
+        ixx="5.33937823292206E-09"
+        ixy="2.17254729560897E-24"
+        ixz="-3.43505014384975E-10"
+        iyy="8.83460540269745E-09"
+        iyz="7.4358130147819E-25"
+        izz="1.20670026416874E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Qupa_Urdf/meshes/IR_135.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Qupa_Urdf/meshes/IR_135.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="IR_135_joint"
+    type="fixed">
+    <origin
+      xyz="-0.0623167376187522 -0.0145113869913993 0.0523787499564868"
+      rpy="1.5707963267949 0 -0.785398163397522" />
+    <parent
+      link="base_link" />
+    <child
+      link="IR_135" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="IR_180">
+    <inertial>
+      <origin
+        xyz="-0.001419256791114 0.00225 -0.0022301238932468"
+        rpy="0 0 0" />
+      <mass
+        value="0.000475132833058846" />
+      <inertia
+        ixx="5.33937823292212E-09"
+        ixy="5.96016653343871E-25"
+        ixz="-3.43505014385472E-10"
+        iyy="8.83460540269747E-09"
+        iyz="-1.00699318179025E-25"
+        izz="1.20670026416874E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Qupa_Urdf/meshes/IR_180.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Qupa_Urdf/meshes/IR_180.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="IR_180_joint"
+    type="fixed">
+    <origin
+      xyz="-0.0247894685504242 -0.0298971121545624 0.0523787499564868"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="IR_180" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="IR_270">
+    <inertial>
+      <origin
+        xyz="-0.001419256791114 0.00225 -0.0022301238932468"
+        rpy="0 0 0" />
+      <mass
+        value="0.000475132833058845" />
+      <inertia
+        ixx="5.33937823292211E-09"
+        ixy="-2.90080877558495E-25"
+        ixz="-3.43505014385471E-10"
+        iyy="8.83460540269745E-09"
+        iyz="3.98982194700003E-25"
+        izz="1.20670026416873E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Qupa_Urdf/meshes/IR_270.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Qupa_Urdf/meshes/IR_270.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="IR_270_joint"
+    type="fixed">
+    <origin
+      xyz="0.0350105314495758 0.0258028878454376 0.0523787499564868"
+      rpy="1.5707963267949 0 1.5707963267949" />
+    <parent
+      link="base_link" />
+    <child
+      link="IR_270" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="R_motor">
+    <inertial>
+      <origin
+        xyz="-0.015121 -0.006 -0.005"
+        rpy="0 0 0" />
+      <mass
+        value="0.003578" />
+      <inertia
+        ixx="7.1148E-08"
+        ixy="1.1484E-22"
+        ixz="-4.3086E-22"
+        iyy="3.0193E-07"
+        iyz="-4.039E-25"
+        izz="3.1474E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Qupa_Urdf/meshes/R_motor.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Qupa_Urdf/meshes/R_motor.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="R_motor_joint"
+    type="fixed">
+    <origin
+      xyz="-0.028789 0.034903 0.036329"
+      rpy="3.1416 0 -1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="R_motor" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="R_wheel">
+    <inertial>
+      <origin
+        xyz="-0.0080544 -1.4873E-05 -3.8864E-11"
+        rpy="0 0 0" />
+      <mass
+        value="0.0029615" />
+      <inertia
+        ixx="4.5674E-07"
+        ixy="5.7632E-11"
+        ixz="-2.5373E-15"
+        iyy="2.392E-07"
+        iyz="4.8406E-12"
+        izz="2.39E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Qupa_Urdf/meshes/R_wheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.50196 0.50196 0.50196 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Qupa_Urdf/meshes/R_wheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="R_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="-0.0293 -0.006 -0.005"
+      rpy="1.4622 0 0" />
+    <parent
+      link="R_motor" />
+    <child
+      link="R_wheel" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="L_motor">
+    <inertial>
+      <origin
+        xyz="-0.015121 -0.006 -0.005"
+        rpy="0 0 0" />
+      <mass
+        value="0.003578" />
+      <inertia
+        ixx="7.1148E-08"
+        ixy="1.437E-22"
+        ixz="-1.8799E-23"
+        iyy="3.0193E-07"
+        iyz="1.2117E-24"
+        izz="3.1474E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Qupa_Urdf/meshes/L_motor.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Qupa_Urdf/meshes/L_motor.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="L_motor_joint"
+    type="fixed">
+    <origin
+      xyz="-0.016789 0.020503 0.036329"
+      rpy="3.1416 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="L_motor" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="L_wheel">
+    <inertial>
+      <origin
+        xyz="-0.0080544 1.4873E-05 3.8865E-11"
+        rpy="0 0 0" />
+      <mass
+        value="0.0029615" />
+      <inertia
+        ixx="4.5674E-07"
+        ixy="-5.7632E-11"
+        ixz="2.5373E-15"
+        iyy="2.392E-07"
+        iyz="4.8406E-12"
+        izz="2.39E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Qupa_Urdf/meshes/L_wheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.50196 0.50196 0.50196 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Qupa_Urdf/meshes/L_wheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="L_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="-0.0293 -0.006 -0.005"
+      rpy="-1.3421 0 0" />
+    <parent
+      link="L_motor" />
+    <child
+      link="L_wheel" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="mid_link">
+    <inertial>
+      <origin
+        xyz="-3.4694E-18 -0.026285 -0.00018922"
+        rpy="0 0 0" />
+      <mass
+        value="0.21561" />
+      <inertia
+        ixx="0.0003964"
+        ixy="2.0481E-20"
+        ixz="3.3342E-20"
+        iyy="0.00059853"
+        iyz="8.9899E-07"
+        izz="0.00039956" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Qupa_Urdf/meshes/mid_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.019608 0.019608 0.019608 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Qupa_Urdf/meshes/mid_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="mid_low_joint"
+    type="fixed">
+    <origin
+      xyz="-0.0227894685504242 0.0277028878454376 0.0743287499564868"
+      rpy="-1.5707963267949 0 -1.5707963267949" />
+    <parent
+      link="base_link" />
+    <child
+      link="mid_link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="frame_link">
+    <inertial>
+      <origin
+        xyz="3.9205E-15 0.01231 4.5103E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.014485" />
+      <inertia
+        ixx="7.3885E-06"
+        ixy="-9.3988E-20"
+        ixz="3.2251E-19"
+        iyy="8.8512E-06"
+        iyz="4.2935E-20"
+        izz="7.3885E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Qupa_Urdf/meshes/frame_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.019608 0.019608 0.019608 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Qupa_Urdf/meshes/frame_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="mid_frame_joint"
+    type="fixed">
+    <origin
+      xyz="0 -0.0635 0"
+      rpy="0 0.7854 3.1416" />
+    <parent
+      link="mid_link" />
+    <child
+      link="frame_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="top_base_link">
+    <inertial>
+      <origin
+        xyz="-1.7347E-17 0.010482 -1.3878E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.040768" />
+      <inertia
+        ixx="4.5137E-05"
+        ixy="9.247E-21"
+        ixz="3.8774E-23"
+        iyy="7.5179E-05"
+        iyz="4.4185E-21"
+        izz="4.5137E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Qupa_Urdf/meshes/top_base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.019608 0.019608 0.019608 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Qupa_Urdf/meshes/top_base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="mid_top_joint"
+    type="fixed">
+    <origin
+      xyz="0 -0.0685 0"
+      rpy="0 0 3.1416" />
+    <parent
+      link="mid_link" />
+    <child
+      link="top_base_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="tube_link">
+    <inertial>
+      <origin
+        xyz="2.7756E-17 1.9082E-17 -0.0375"
+        rpy="0 0 0" />
+      <mass
+        value="0.0063617" />
+      <inertia
+        ixx="3.5626E-06"
+        ixy="-2.1176E-22"
+        ixz="2.9288E-22"
+        iyy="3.5626E-06"
+        iyz="-4.249E-23"
+        izz="1.161E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Qupa_Urdf/meshes/tube_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 0.96471 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Qupa_Urdf/meshes/tube_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="top_tube_joint"
+    type="fixed">
+    <origin
+      xyz="0 0.047 0"
+      rpy="1.5708 0.31958 0" />
+    <parent
+      link="top_base_link" />
+    <child
+      link="tube_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="mirror_link">
+    <inertial>
+      <origin
+        xyz="0 0.0072703 1.0408E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.00099484" />
+      <inertia
+        ixx="5.9879E-08"
+        ixy="4.6719E-24"
+        ixz="2.2618E-23"
+        iyy="1.0131E-07"
+        iyz="-1.9251E-23"
+        izz="5.9879E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Qupa_Urdf/meshes/mirror_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.74902 0.74902 0.74902 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Qupa_Urdf/meshes/mirror_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="mirror_joint"
+    type="fixed">
+    <origin
+      xyz="0 0 -0.063"
+      rpy="-1.5708 0 1.8904" />
+    <parent
+      link="tube_link" />
+    <child
+      link="mirror_link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+</robot>
